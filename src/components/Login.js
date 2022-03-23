@@ -22,7 +22,7 @@ export default function Login() {
             await login(email, password)
             navigate('/')
         } catch {
-            setError('Failed to log in')
+            setError('Failed to log in. Incorrect email or password.')
         }
 
         setLoading(false)

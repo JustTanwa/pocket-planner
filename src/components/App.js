@@ -7,6 +7,7 @@ import {BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './Login';
 import DashboardWrapper from './DashboardWrapper';
 import ForgotPassword from './ForgotPassword';
+import UpdateProfile from './UpdateProfile';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                     <Dashboard />
                   </DashboardWrapper>} 
                 />
+                <Route path="/update-profile" element={<UpdateProfile />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
