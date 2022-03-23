@@ -5,7 +5,8 @@ import Signup from './Signup';
 import Dashboard from './Dashboard';
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './Login';
-
+import DashboardWrapper from './DashboardWrapper';
+import ForgotPassword from './ForgotPassword';
 
 function App() {
   return (
@@ -17,9 +18,13 @@ function App() {
           <BrowserRouter>
             <AuthProvider>
               <Routes>
-                <Route exact path="/" element={<Dashboard />} />
+                <Route exact path="/" element={<DashboardWrapper> 
+                    <Dashboard />
+                  </DashboardWrapper>} 
+                />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
               </Routes>
             </AuthProvider>
           </BrowserRouter>
