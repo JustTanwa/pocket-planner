@@ -9,6 +9,11 @@ In the project directory, you can run:
 
 `npm start` 
 
+### Tech Stack Used
+- ReactJS
+- Firebase
+- Bootstrap
+
 ### Features (To be implemented)
 
 - Sign up and login to keep track of holiday destination
